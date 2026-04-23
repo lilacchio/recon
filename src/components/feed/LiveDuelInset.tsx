@@ -179,13 +179,16 @@ export function LiveDuelInset({ last }: { last: DuelCallRow | null }) {
 }
 
 function ReplayColumns({ call }: { call: DuelCallRow }) {
-  const [tick, setTick] = useState(0);
+  const maxLen = Math.max(call.hawk.reasoning.length, call.owl.reasoning.length);
+  // Start at maxLen so SSR/pre-hydration renders full text; reset to 0 on mount to animate.
+  const [tick, setTick] = useState(maxLen);
   useEffect(() => {
-    const id = setInterval(() => setTick((t) => (t + 1) % 900), 50);
+    setTick(0);
+    const id = setInterval(() => setTick((t) => t + 2), 50);
     return () => clearInterval(id);
-  }, []);
-  const charsH = Math.min(call.hawk.reasoning.length, tick * 2);
-  const charsO = Math.min(call.owl.reasoning.length, tick * 2);
+  }, [maxLen]);
+  const charsH = Math.min(call.hawk.reasoning.length, tick);
+  const charsO = Math.min(call.owl.reasoning.length, tick);
   return (
     <div className="grid grid-cols-2 gap-3">
       <ColumnCard

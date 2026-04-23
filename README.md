@@ -6,7 +6,7 @@ Live: https://recon-murex.vercel.app
 
 ---
 
-[![Watch the demo](./screenshots/hero.png)](https://recon-murex.vercel.app/recon-30s.mp4)
+[Watch the demo →](https://recon-murex.vercel.app/recon-30s.mp4)
 
 ---
 

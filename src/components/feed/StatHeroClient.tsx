@@ -1,9 +1,12 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import type { FeedStats } from "@/lib/feed";
 
 export function StatHeroClient({ stats }: { stats: FeedStats }) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
   const items = [
     { label: "calls filed", value: stats.calls.toString(), sub: "all-time" },
     {
@@ -46,7 +49,7 @@ export function StatHeroClient({ stats }: { stats: FeedStats }) {
         </div>
 
         <motion.div
-          initial="hidden"
+          initial={mounted ? "hidden" : false}
           animate="show"
           variants={{
             hidden: {},
