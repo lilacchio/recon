@@ -20,7 +20,7 @@ export default async function FeedPage() {
       <LiveDuelInset last={lastDisagreed} />
       <Feed />
       <footer className="border-t border-[var(--border)] px-5 py-8 text-center font-mono text-[10.5px] text-[var(--text-mute)] sm:py-10">
-        built for birdeye/bip · sprint_01 · source on github after sprint
+        powered by birdeye · <a href="https://github.com/lilacchio/recon" className="hover:text-[var(--text)]">github</a>
       </footer>
     </div>
   );

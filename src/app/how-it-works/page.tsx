@@ -24,7 +24,7 @@ export default function HowItWorksPage() {
       <div className="mt-6 flex flex-wrap gap-3">
         <span className="flex items-center gap-2 border border-[var(--border-strong)] px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--text-mute)]">
           <GitBranch className="h-3 w-3" strokeWidth={2.5} />
-          source on github · after sprint_01
+          source on github · MIT license
         </span>
         <Link
           href="/"

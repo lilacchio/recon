@@ -55,7 +55,7 @@ export async function StatusBar() {
         </span>
       </div>
       <div className="flex items-center gap-5">
-        <span className="text-[var(--text-dim)]">birdeye · sprint_01</span>
+        <span className="text-[var(--text-dim)]">birdeye · solana</span>
       </div>
     </div>
   );

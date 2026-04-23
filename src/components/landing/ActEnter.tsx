@@ -71,7 +71,7 @@ export function ActEnter() {
           </Link>
         </div>
         <p className="mt-12 font-mono text-[10px] uppercase tracking-[0.24em] text-white/30">
-          built for birdeye/bip · sprint_01
+          powered by birdeye
         </p>
       </motion.div>
     </section>

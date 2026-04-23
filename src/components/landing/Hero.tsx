@@ -209,7 +209,7 @@ export function Hero() {
       >
         <div className="pointer-events-auto relative w-full max-w-[420px] border border-white/50 bg-black/10 p-8 text-white backdrop-blur-[2px] sm:max-w-[460px] sm:p-10">
           <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-white/70">
-            recon · sprint_01
+            recon · v0.1
           </p>
           <h1 className="mt-3 font-sans text-[36px] font-semibold leading-[1.02] tracking-tight sm:text-[46px]">
             The Ren<span className="italic text-[var(--accent)]">ai</span>ssance
